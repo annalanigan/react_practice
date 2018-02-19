@@ -21,9 +21,9 @@ class FilmListBox extends Component {
   render() {
     return (
       <div>
-        <div className='title-box'>UK Opening This Week</div>
+        <h1 className='title-box'>UK Opening This Week</h1>
         <div className='showtimes'>
-          <FilmsTable/>
+          <FilmsTable films={this.state.films}/>
         </div>
         <div className='See-more-opening-times'>See more opening times here >></div>
         <div className='button-div'>

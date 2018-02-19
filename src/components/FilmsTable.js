@@ -1,10 +1,21 @@
 import React, { Component } from 'react';
+import DetailRow from './FilmDetailRow'
 
 class FilmsTable extends Component {
 
   render() {
-    return (<div>
-      Rendering
+
+    const mappedFilms = this.props.films.map (film => {
+      return (
+        <DetailRow key={film.id}>
+          {film.name}
+        </DetailRow>
+      )
+    })
+
+    return (
+      <div className='filmList'>
+      {mappedFilms}
       </div>
     )
   }
