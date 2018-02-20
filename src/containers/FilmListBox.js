@@ -9,12 +9,12 @@ class FilmListBox extends Component {
 
     this.state = {
       films: [
-        {id: 1, name: 'Moana'},
-        {id: 2, name: 'Trolls'},
-        {id: 3, name: 'How to Train your Dragon'},
-        {id: 4, name: 'Monsters Inc'},
-        {id: 5, name: 'Boss Baby'},
-        {id: 6, name: 'Zootropolis'},
+        {id: 1, name: 'Moana', logo:'moana.png'},
+        {id: 2, name: 'Trolls', logo:'trolls.png'},
+        {id: 3, name: 'How to Train your Dragon', logo:'dragon.png'},
+        {id: 4, name: 'Monsters Inc', logo:'monsters.png'},
+        {id: 5, name: 'Boss Baby', logo:'baby.png'},
+        {id: 6, name: 'Zootropolis', logo:'zootropolis.png'},
       ]
     }
   }
