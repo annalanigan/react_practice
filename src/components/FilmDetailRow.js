@@ -4,10 +4,12 @@ class FilmDetailRow extends Component {
 
   render() {
     return (
-      <div>
-        <h4>{this.props.children}</h4>
-        <p>showtimes</p>
-      </div>
+      <thead>
+      <tr className="detailRow">
+        <td>{this.props.children}</td>
+        <td>showtimes</td>
+      </tr>
+      </thead>
     );
   }
 

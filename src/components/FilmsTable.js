@@ -7,16 +7,16 @@ class FilmsTable extends Component {
 
     const mappedFilms = this.props.films.map (film => {
       return (
-        <DetailRow key={film.id}>
+        <DetailRow key={film.id} logo={film.logo}>
           {film.name}
         </DetailRow>
       )
     })
 
     return (
-      <div className='filmList'>
+      <table className='filmList'>
       {mappedFilms}
-      </div>
+    </table>
     )
   }
 
