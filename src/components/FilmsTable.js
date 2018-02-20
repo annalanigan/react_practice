@@ -15,8 +15,10 @@ class FilmsTable extends Component {
 
     return (
       <table className='filmList'>
-      {mappedFilms}
-    </table>
+        <thead>
+          {mappedFilms}
+        </thead>
+      </table>
     )
   }
 
